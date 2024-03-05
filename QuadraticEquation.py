@@ -22,5 +22,12 @@ class QuadraticEquation(Equation):
                 x2 = (-self.b + d2) / (2 * self.a)
                 return x1, x2
 
-
-
+if __name__ == '__main__':
+    eq1 = QuadraticEquation(2, 3, 4)
+    print(eq1.solve())
+    eq2 = QuadraticEquation(0, 5, 3)
+    print(eq2.solve())
+    eq3 = QuadraticEquation(5, 0, 0)
+    print(eq3.solve())
+    eq4 = QuadraticEquation(0, 0, 4)
+    print(eq4.solve())

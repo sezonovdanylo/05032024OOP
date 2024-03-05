@@ -6,7 +6,7 @@ class Equation:
     def solve(self):
         if self.b != 0 :
             x1 = -self.c/self.b
-            return(x1)
+            return (x1,)
         else:
             if self.c == 0:
                 return Equation.INF
